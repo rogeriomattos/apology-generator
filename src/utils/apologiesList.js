@@ -44,7 +44,7 @@ const apologiesList = [
   "Joguei Sonic o domingo inteiro, minha retina descolou",
   "Fiz um quiz para saber qual tartaruga eu sou, deu Leonardo, vou ver video de auto ajuda agora",
   "Fiquei 1h explicando pro Padre como Sunshine é bom, sem live hoje",
-  "Perdia a hora jogando Donkey Konga, amanhã tem, taiko no tatsujin",
+  "Perdi a hora jogando Donkey Konga, amanhã tem, taiko no tatsujin",
   "Tropecei no meu Ring fit, vou ficar me recuperando pessoal",
   "Tentei jogar Xenoblade, agora estou bravo, sem live hoje",
   "Já teve live de manhã",
