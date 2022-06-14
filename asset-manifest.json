@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.aaefb9fb.css",
-    "main.js": "/static/js/main.32c96a0f.js",
-    "static/media/promessas.jpg": "/static/media/promessas.4a41e5e0feb6322b9ece.jpg",
-    "index.html": "/index.html",
-    "main.aaefb9fb.css.map": "/static/css/main.aaefb9fb.css.map",
-    "main.32c96a0f.js.map": "/static/js/main.32c96a0f.js.map"
+    "main.css": "/apology-generator/static/css/main.aaefb9fb.css",
+    "main.js": "/apology-generator/static/js/main.6c194a62.js",
+    "static/media/promessas.jpg": "/apology-generator/static/media/promessas.4a41e5e0feb6322b9ece.jpg",
+    "index.html": "/apology-generator/index.html",
+    "main.aaefb9fb.css.map": "/apology-generator/static/css/main.aaefb9fb.css.map",
+    "main.6c194a62.js.map": "/apology-generator/static/js/main.6c194a62.js.map"
   },
   "entrypoints": [
     "static/css/main.aaefb9fb.css",
-    "static/js/main.32c96a0f.js"
+    "static/js/main.6c194a62.js"
   ]
 }
