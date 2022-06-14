@@ -13,8 +13,24 @@ export const Container = styled.div`
     &:first-child{
       width: 50%;
       @media screen and (max-width: 600px) {
-        width: 80%;
+        width: 90%;
       }
     }
+  }
+`;
+
+export const Footer = styled.footer`
+  position: fixed;
+  bottom: 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  a {
+    text-decoration: none;
+    font-weight: 700;
+    color: #db7093;
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 1.15rem;
   }
 `;

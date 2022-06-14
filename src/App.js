@@ -22,6 +22,9 @@ function App() {
     <S.Container>
       <CardRandom text={apologyText} />
       <Button onClick={drawApology}/>
+      <S.Footer>
+        Siga o Zé para ouvir mais promessas em <a target="_blank" href='https://www.twitch.tv/zerenacho' rel="noreferrer">twitch.tv/zerenacho</a>
+      </S.Footer>
     </S.Container>
   );
 }
