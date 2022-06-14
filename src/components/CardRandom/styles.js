@@ -1,9 +1,10 @@
 import styled from 'styled-components';
 
-export const Container = styled.div` 
+export const Container = styled.div`
+  position: relative; 
   border: 4px #db7093 solid;
   border-radius: 4px;
-  padding: 1rem;
+  padding: 1.15rem 1rem;
   font-size: 4rem;
   display: flex;
   align-items: center;
@@ -26,4 +27,11 @@ export const Container = styled.div`
       min-height: auto;
     }
   }
+`;
+
+export const ApologyIndex = styled.span`
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  font-size: 1rem;
 `;

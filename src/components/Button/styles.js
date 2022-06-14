@@ -9,6 +9,7 @@ export const Button = styled.button`
   padding: 0.5em 1.25em;
   border-radius: 3px;
   cursor: pointer;
+  margin-bottom: 100px;
 
   &:hover {
     opacity: .9;

@@ -1,5 +1,11 @@
 import styled from 'styled-components';
 
+export const ApologiesLength = styled.span`
+  padding: 1rem 0;
+  text-align: center;
+  width: 100%;
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -10,7 +16,7 @@ export const Container = styled.div`
   text-align: center;
 
   div {
-    &:first-child{
+    &:nth-child(2){
       width: 50%;
       @media screen and (max-width: 600px) {
         width: 90%;
