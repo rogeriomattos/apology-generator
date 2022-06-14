@@ -51,7 +51,12 @@ const apologiesList = [
   "Fui no aniversário do Guanabara, não sei se estou vivo",
   "Meu croma parou de funcionar", 
   "Jogamos Switch Sports a noite toda ontem, hoje estou morto",
-  "Joguei Diablo sozinho hoje, agora estou indo na casa do Padre Edson"
+  "Joguei Diablo sozinho hoje, agora estou indo na casa do Padre Edson",
+  "Estou aprendendo a fazer arroz",
+  "Estou fazendo feijão, como não uso panela de pressão vai demorar, sem live hoje",
+  "Fui aprender a usar panela de pressão, explodi minha cozinha",
+  "Fui em uma exposição psicodélica com a Lalra",
+  "Tive que ensaiar com a minha banda hoje, amanhã tem Legião Urbana na live"
 ];
 
 export default apologiesList;
