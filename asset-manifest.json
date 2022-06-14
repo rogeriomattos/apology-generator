@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.aaefb9fb.css",
-    "main.js": "/static/js/main.9e71c023.js",
+    "main.js": "/static/js/main.32c96a0f.js",
+    "static/media/promessas.jpg": "/static/media/promessas.4a41e5e0feb6322b9ece.jpg",
     "index.html": "/index.html",
     "main.aaefb9fb.css.map": "/static/css/main.aaefb9fb.css.map",
-    "main.9e71c023.js.map": "/static/js/main.9e71c023.js.map"
+    "main.32c96a0f.js.map": "/static/js/main.32c96a0f.js.map"
   },
   "entrypoints": [
     "static/css/main.aaefb9fb.css",
-    "static/js/main.9e71c023.js"
+    "static/js/main.32c96a0f.js"
   ]
 }
