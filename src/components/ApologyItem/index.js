@@ -16,7 +16,7 @@ export const ApologyItem = ({item, index}) => {
   }, [apologyIndex]);
   return (
     <S.ListItem ref={listItemRef} isCurrent={apologyIndex === index} test={height}>
-      <S.ListItemContent key={'key' + index} onClick={() => setCurrentApology(item, index)}>
+      <S.ListItemContent onClick={() => setCurrentApology(item, index)}>
         <img alt="Festival Promessas" src={pokeball}/>
         <div>
           <span>{`${index < 9 ? '0':''}` + (index + 1)}</span>

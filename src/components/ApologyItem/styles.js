@@ -48,7 +48,7 @@ export const ListItemContent = styled.div`
     span {
       overflow: hidden;
       &:last-child {
-        width: 100%;
+        width: 80%;
       }
     }
   }

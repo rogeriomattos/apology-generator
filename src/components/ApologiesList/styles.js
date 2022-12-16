@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, {css} from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
@@ -19,19 +19,21 @@ export const Container = styled.div`
 `;
 
 export const ListContainer = styled.div`
- width: 100%;
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  position: absolute;
-  top: 50%;
-  left: 0;
-  box-sizing: border-box;
-  padding-left: 70px;
-  padding-right: 20px;
-
-  @media screen and (max-width: 900px) {
-    top: 0%;
+  ${(props) => css`
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    position: absolute;
+    top: ${'calc(50% - '+props.topHeight+'px)'};
     left: 0;
-  }
+    box-sizing: border-box;
+    padding-left: 70px;
+    padding-right: 20px;
+
+    @media screen and (max-width: 900px) {
+      top: 0%;
+      left: 0;
+    }
+  `}
 `;
