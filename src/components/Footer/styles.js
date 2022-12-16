@@ -4,4 +4,15 @@ export const Container = styled.div`
   background: #ccc;
   padding: 8px;
   height: 100%;
+
+  /* color light */
+  /* background: #3ab9a1; */
+  /* color medium */
+  /* background: #2c8776; */
+
+  /* color meidum dark */
+  /* background: #11302b; */
+
+  /* color dark */
+  background: #0f2621;
 `;

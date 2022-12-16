@@ -5,12 +5,13 @@ export const Container = styled.div`
   height: 100vh;
   display: flex;
   flex-direction: column; 
+  overflow: hidden;
   
   >div:first-child {
     width: 100%;
     display: flex;
     background: #0a7bc9;
-    padding: 20px;
+    padding: 0px 20px 0px 0px; 
     box-sizing: border-box;
     height: 90%;  
   }

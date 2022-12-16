@@ -5,10 +5,12 @@ import apologiesList from './utils/apologiesList';
 
 function App() {
   const [currentApology, setCurrentApology] = useState(apologiesList[0]);
-  const [currentApologyIndex, setCurrentApologyIndex] = useState(apologiesList[0]);
+  const [currentApologyIndex, setCurrentApologyIndex] = useState(0);
+  const [lastIndex, setLastIndex] = useState(0);
 
   const handleCurrentApology = (apology, index) => {
     setCurrentApology(apology);
+    setLastIndex(currentApologyIndex);
     setCurrentApologyIndex(index);
   }
 
@@ -16,6 +18,7 @@ function App() {
     <ApologyContext.Provider value={{
       currentApology,
       apologyIndex: currentApologyIndex,
+      lastIndex,
       setCurrentApology: handleCurrentApology
     }}>
       <Pokedex />

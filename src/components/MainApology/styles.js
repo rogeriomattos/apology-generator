@@ -6,12 +6,15 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding: 20px 0;
+  overflow: hidden;
   @media screen and (max-width: 900px) {
     height: 100%;
   }
 `;
 
 export const Content = styled.div`
+  overflow: hidden;
   background: #fff;
   height: 100%;
   width: 70%;
@@ -27,7 +30,14 @@ export const Content = styled.div`
   padding: 0 30px;
   text-align: center;
   div {
+    overflow: hidden;
     z-index:2;
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   @media screen and (max-width: 900px) {
@@ -44,6 +54,7 @@ export const Image = styled.img`
     left: -5%;
     opacity: 0.5;
     transform: translate(-5%,-50%)${props => css`rotate(${props.rotate+'deg'})`};
+    transition: transform .3s; 
     z-index:1;
 
     @media screen and (max-width: 900px) {
@@ -104,4 +115,19 @@ export const BorderEnphasy = styled.div`
       right: 0%;
     }
   }
+`;
+
+export const PrevText = styled.span`
+  position: absolute;
+  bottom: 90%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: .4;
+`;
+export const NextText = styled.span`
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  opacity: .4;
 `;
