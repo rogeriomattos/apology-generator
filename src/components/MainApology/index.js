@@ -1,14 +1,15 @@
-import * as S from './styles'; 
+import { useEffect, useState, useContext } from 'react';
+import { ApologyContext } from '../../context/ApologyContext';
 import pokeball from '../../assets/pokeball_white.png';
-import { useEffect } from 'react';
-import { useState } from 'react';
+import * as S from './styles'; 
 
-export const MainApology = ({ text }) => {
+export const MainApology = () => {
   const [rotate, setRotate] = useState(-20);
-  
+  const { currentApology, apologyIndex } = useContext(ApologyContext);
+
   useEffect(() => {
     setRotate(state => state + 10);
-  }, [text]);
+  }, [currentApology]);
 
   return (
     <S.Container>
@@ -16,7 +17,7 @@ export const MainApology = ({ text }) => {
       <S.BorderEnphasy/>
       <S.Content>
         <div>
-          {text}
+          {currentApology}
         </div>
         <S.Image src={pokeball} rotate={rotate}/>
       </S.Content>

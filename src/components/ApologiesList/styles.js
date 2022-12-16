@@ -44,17 +44,13 @@ export const ListItem = styled.div`
 
     span {
       overflow: hidden;
+      &:last-child {
+        width: 100%;
+      }
     }
   }
 
   @media screen and (max-width: 900px) {
     gap: 8px;
-    >div { 
-      span {
-        &:last-child {
-          width: 100%;
-        }
-      }
-    }
   }
 `;
