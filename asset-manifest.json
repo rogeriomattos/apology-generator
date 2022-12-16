@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/apology-generator/static/css/main.aaefb9fb.css",
-    "main.js": "/apology-generator/static/js/main.b3e67745.js",
-    "static/media/promessas.jpg": "/apology-generator/static/media/promessas.4a41e5e0feb6322b9ece.jpg",
+    "main.css": "/apology-generator/static/css/main.d06a47ba.css",
+    "main.js": "/apology-generator/static/js/main.3a9f5c86.js",
+    "static/media/pokeball.png": "/apology-generator/static/media/pokeball.774abbafa8d08b174185.png",
+    "static/media/pokeball_white.png": "/apology-generator/static/media/pokeball_white.a6aab6292578d6d916d3.png",
     "index.html": "/apology-generator/index.html",
-    "main.aaefb9fb.css.map": "/apology-generator/static/css/main.aaefb9fb.css.map",
-    "main.b3e67745.js.map": "/apology-generator/static/js/main.b3e67745.js.map"
+    "main.d06a47ba.css.map": "/apology-generator/static/css/main.d06a47ba.css.map",
+    "main.3a9f5c86.js.map": "/apology-generator/static/js/main.3a9f5c86.js.map"
   },
   "entrypoints": [
-    "static/css/main.aaefb9fb.css",
-    "static/js/main.b3e67745.js"
+    "static/css/main.d06a47ba.css",
+    "static/js/main.3a9f5c86.js"
   ]
 }
