@@ -14,13 +14,19 @@ function App() {
     setCurrentApologyIndex(index);
   }
 
+  const handleSetIndex = (index) => {
+    console.log('handleSetIndex', index);
+    handleCurrentApology(apologiesList[index], index);
+  }
+
   return (
     <ApologyContext.Provider value={{
       currentApology,
       apologyIndex: currentApologyIndex,
       lastIndex,
       setCurrentApology: handleCurrentApology,
-      apologiesList
+      apologiesList,
+      setIndex: handleSetIndex
     }}>
       <Pokedex />
     </ApologyContext.Provider>

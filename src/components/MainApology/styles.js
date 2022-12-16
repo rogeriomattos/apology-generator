@@ -10,6 +10,7 @@ export const Container = styled.div`
   overflow: hidden;
   @media screen and (max-width: 900px) {
     height: 100%;
+    overflow: initial;
   }
 `;
 

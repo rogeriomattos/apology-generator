@@ -15,6 +15,14 @@ export const ListItem = styled.div`
       border-bottom: ${props.test + 'px solid transparent'}; 
       border-right: ${props.test + 'px solid #d7110e'}; 
     }
+
+    @media screen and (max-width: 900px) {
+      padding: 0;
+      background: transparent;
+      &:before {
+        display: none;
+      }
+    }
   `}
 `;
 

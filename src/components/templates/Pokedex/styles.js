@@ -20,6 +20,7 @@ export const Container = styled.div`
     >div:first-child {
       flex-direction: column;
       gap: 10px;
+      padding: 10px;
     }
   }
 `;

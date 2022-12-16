@@ -34,6 +34,8 @@ export const ListContainer = styled.div`
     @media screen and (max-width: 900px) {
       top: 0%;
       left: 0;
+      padding-left: 0px;
+      padding-right: 0px;
     }
   `}
 `;
