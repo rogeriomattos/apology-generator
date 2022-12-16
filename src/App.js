@@ -19,7 +19,8 @@ function App() {
       currentApology,
       apologyIndex: currentApologyIndex,
       lastIndex,
-      setCurrentApology: handleCurrentApology
+      setCurrentApology: handleCurrentApology,
+      apologiesList
     }}>
       <Pokedex />
     </ApologyContext.Provider>
