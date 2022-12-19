@@ -9,5 +9,8 @@ export const ApologyContext = createContext({
   setCurrentApology: (apology, index) => {},
   apologiesList,
   initialPage: true,
-  setInitialPage: (page) => {}
+  setInitialPage: (page) => {},
+  drawApology: () => {},
+  handleSearch: (text) => {},
+  searchText: ''
 });

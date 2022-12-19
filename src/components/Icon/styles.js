@@ -14,4 +14,11 @@ export const Container = styled.div`
   svg {
     font-size: 28px;
   }
+
+  &:hover {
+    opacity: .9;
+  }
+  &:active {
+    opacity: .7;
+  }
 `;

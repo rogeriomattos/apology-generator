@@ -7,17 +7,8 @@ import { useEffect } from 'react';
 import { ApologyItem } from '../ApologyItem';
 import { useState } from 'react';
 
-function debounce(func, timeout = 300){
-  let timer;
-  console.log('deba')
-  return (...args) => {
-    clearTimeout(timer);
-    timer = setTimeout(() => { func.apply(this, args); }, timeout);
-  };
-}
-
 export const ApologiesList = () => {
-  const { apologyIndex, setIndex } = useContext(ApologyContext);
+  const { apologyIndex, setIndex, searchText } = useContext(ApologyContext);
   const listRef =  useRef();
   const containerRef =  useRef();
   const [topHeight, setTopHeight] = useState(0);
@@ -60,13 +51,22 @@ export const ApologiesList = () => {
     }
   }, [apologyIndex]);
 
+  useEffect(() => {
+    containerRef?.current.scroll(0, 0);
+  }, [searchText]);
+  
+  const filter = (item) => {
+    const index = apologiesList.indexOf(item) + 1;
+
+    return item.toUpperCase().includes(searchText.toUpperCase()) || (index < 10?`0${index}`:index).toString().includes(searchText);
+  }
   return (
     <S.Container ref={containerRef} onScroll={handleScroll}>
       <S.ListContainer ref={listRef} topHeight={topHeight}>
-        {apologiesList.map((item, index) =>(
+        {apologiesList.filter(filter).map((item, index) =>(
           <ApologyItem
             key={'key' + index} 
-            index={index}
+            index={apologiesList.indexOf(item)}
             item={item}
           />
         ))}
