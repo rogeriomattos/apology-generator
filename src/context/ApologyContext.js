@@ -8,4 +8,6 @@ export const ApologyContext = createContext({
   setIndex: (index) => {},
   setCurrentApology: (apology, index) => {},
   apologiesList,
+  initialPage: true,
+  setInitialPage: (page) => {}
 });

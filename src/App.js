@@ -7,6 +7,7 @@ function App() {
   const [currentApology, setCurrentApology] = useState(apologiesList[0]);
   const [currentApologyIndex, setCurrentApologyIndex] = useState(0);
   const [lastIndex, setLastIndex] = useState(0);
+  const [initialPage, setInitialPage] = useState(true);
 
   const handleCurrentApology = (apology, index) => {
     setCurrentApology(apology);
@@ -26,7 +27,9 @@ function App() {
       lastIndex,
       setCurrentApology: handleCurrentApology,
       apologiesList,
-      setIndex: handleSetIndex
+      setIndex: handleSetIndex,
+      initialPage,
+      setInitialPage
     }}>
       <Pokedex />
     </ApologyContext.Provider>

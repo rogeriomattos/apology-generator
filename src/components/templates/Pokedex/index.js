@@ -6,11 +6,14 @@ import { useState } from 'react';
 import { Footer } from '../../Footer';
 import { ApologyContext } from '../../../context/ApologyContext';
 import { useContext } from 'react';
+import dexBg from '../../../assets/Dex_bg_2.png';
+import { useEffect } from 'react';
 
 export const Pokedex = () => {
   const arrowUp = 38;
   const arrowDown = 40;
-  const { setCurrentApology, apologyIndex, apologiesList } = useContext(ApologyContext);
+  const { setCurrentApology, apologyIndex, apologiesList, initialPage, setInitialPage } = useContext(ApologyContext);
+  const [stylesIntialPage, setStylesIntialPage] = useState({});
 
   const handleKeyDown = (e) => {
     if(e.keyCode === arrowUp && apologyIndex !== 0) {
@@ -23,13 +26,32 @@ export const Pokedex = () => {
     }
   }
 
+  useEffect(() => {
+    if(initialPage) {
+      setStylesIntialPage({});
+      return;
+    }
+
+    setTimeout(() => {
+      setStylesIntialPage({
+        display:'none'
+      });
+    }, 700);
+  }, [initialPage]);
+
   return (
-    <S.Container role="button" tabIndex="0" onKeyDown={handleKeyDown}>
-      <div>
-        <MainApology/>
-        <ApologiesList/>
-      </div>
-      <Footer />
-    </S.Container>
+    <>
+      <S.BgInitial initialPage={initialPage} style={stylesIntialPage}>
+        <img src={dexBg} onClick={() => setInitialPage(false)}/>
+      </S.BgInitial>
+      
+      <S.Container role="button" tabIndex="0" onKeyDown={handleKeyDown}>
+        <div>
+          <MainApology/>
+          <ApologiesList/>
+        </div>
+        <Footer />
+      </S.Container>
+    </>
   )
 };
