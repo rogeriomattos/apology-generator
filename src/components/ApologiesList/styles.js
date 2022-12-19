@@ -30,6 +30,7 @@ export const ListContainer = styled.div`
     box-sizing: border-box;
     padding-left: 70px;
     padding-right: 20px;
+    overflow-x: hidden;
 
     @media screen and (max-width: 900px) {
       top: 0%;

@@ -5,6 +5,7 @@ export const ListItem = styled.div`
     background: #d7110e;
     padding: 6px 6px 6px 0;
     position: relative;
+    width: 100%;
     &:before {
       content: "";
       position: absolute; 
@@ -15,11 +16,20 @@ export const ListItem = styled.div`
       border-bottom: ${props.test + 'px solid transparent'}; 
       border-right: ${props.test + 'px solid #d7110e'}; 
     }
+    &:after {
+      content: "";
+      position: absolute; 
+      top: 0;
+      left: 100%;
+      width: 300px;
+      height: 100%;
+      background: #d7110e;
+    }
 
     @media screen and (max-width: 900px) {
       padding: 0;
       background: transparent;
-      &:before {
+      &:before, &:after {
         display: none;
       }
     }

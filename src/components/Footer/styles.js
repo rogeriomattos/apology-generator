@@ -15,4 +15,5 @@ export const Container = styled.div`
 
   /* color dark */
   background: #0f2621;
+  z-index:1;
 `;
