@@ -11,6 +11,7 @@ body {
   color: #db7093; */
   font-family: Roboto;
   height: 100vh;
+  overflow: hidden;
 }
 
 * {

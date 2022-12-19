@@ -34,7 +34,7 @@ export const Pokedex = () => {
 
     setTimeout(() => {
       setStylesIntialPage({
-        display:'none'
+        zIndex: -1
       });
     }, 700);
   }, [initialPage]);
