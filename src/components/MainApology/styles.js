@@ -4,13 +4,14 @@ export const Container = styled.div`
   width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
   position: relative;
   padding: 20px 0;
-  overflow: hidden;
   @media screen and (max-width: 900px) {
+    overflow: hidden;
     height: 100%;
     overflow: initial;
+    align-items: center;
   }
 `;
 
@@ -18,7 +19,7 @@ export const Content = styled.div`
   overflow: hidden;
   background: #fff;
   height: 100%;
-  width: 70%;
+  width: 85%;
   box-sizing: border-box;
   border: 3px solid #000;
   border-radius: 10%/50%;
@@ -78,7 +79,7 @@ export const BorderEnphasy = styled.div`
   
   &:nth-child(2) {
     top: 20%;
-    right: 12%;
+    right: -3%;
     border-right: 10px solid red;
     border-top: 10px solid red;
   }
@@ -91,7 +92,7 @@ export const BorderEnphasy = styled.div`
   }
   &:last-child {
     bottom: 20%;
-    right: 12%;
+    right: -3%;
     border-right: 10px solid red;
     border-bottom: 10px solid red;
   }
