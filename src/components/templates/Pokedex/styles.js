@@ -3,7 +3,7 @@ import diamondIcon from '../../../assets/diamond-fill.svg';
 
 export const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 82vh;
   display: flex;
   flex-direction: column; 
   overflow: hidden;
@@ -15,7 +15,7 @@ export const Container = styled.div`
     background: #0a7bc9;
     padding: 0px 0px 0px 0px; 
     box-sizing: border-box;
-    height: 90%;  
+    height: 100%;  
     &:before {
       content: "";
       background-image: url(${diamondIcon});

@@ -45,7 +45,7 @@ export const ListItemContent = styled.div`
   gap: 12px;
   padding: 8px;
   border-radius: 50px 12px 12px 50px;
-  border: 1px solid #000;
+  border: 3px solid #000;
 
   img {
     width: 35px;
@@ -61,6 +61,7 @@ export const ListItemContent = styled.div`
     padding: 4px 12px;
     overflow: hidden;
     font-size: 20px;
+    font-weight: 500;
     box-sizing: border-box;
 
     span {

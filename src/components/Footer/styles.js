@@ -11,7 +11,8 @@ export const Container = styled.div`
   z-index: 1;
   width: 100%;
   box-sizing: border-box;
-  min-height: 10%;
+  height: 10vh;
+  z-index: 1;
   >div {
     display: flex;
     gap: 8px;

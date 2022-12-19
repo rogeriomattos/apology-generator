@@ -2,6 +2,7 @@ import * as S from './styles';
 import { useApologies } from '../../../hooks/useApologies';
 import { ApologiesList } from '../../ApologiesList';
 import { MainApology } from '../../MainApology';
+import { Header } from '../../Header';
 import { useState } from 'react';
 import { Footer } from '../../Footer';
 import { ApologyContext } from '../../../context/ApologyContext';
@@ -42,17 +43,19 @@ export const Pokedex = () => {
 
   return (
     <>
-      <S.BgInitial initialPage={initialPage} style={stylesIntialPage}>
-        <img src={dexBg} onClick={() => setInitialPage(false)}/>
-      </S.BgInitial>
       
+      
+      <Header />
       <S.Container role="button" tabIndex="0" onKeyDown={handleKeyDown}>
         <div>
           <MainApology/>
           <ApologiesList/>
         </div>
-        <Footer />
       </S.Container>
+      <Footer />
+      <S.BgInitial initialPage={initialPage} style={stylesIntialPage}>
+        <img src={dexBg} onClick={() => setInitialPage(false)}/>
+      </S.BgInitial>
     </>
   )
 };

@@ -29,6 +29,7 @@ export const Content = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 30px;
+  font-weight: 500;
   padding: 0 30px;
   text-align: center;
   div {
